@@ -1,0 +1,17 @@
+/* Navbar index */
+.nav-link.active {
+    color: #000 !important; 
+    background-color: #fff; 
+  }
+  
+  .nav-link.active:hover {
+    color: #333 !important; 
+  }
+  
+  .btn-close {
+    filter: invert(0) !important; 
+  }
+  
+  .btn-close:hover {
+    background-color: #e6e6e6; 
+  }

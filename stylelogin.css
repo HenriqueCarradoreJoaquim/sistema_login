@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.main-login {
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+  width: 45vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login > h1 {
+  color: white;
+  font-size: 2.5vw;
+}
+
+.left-login-image {
+  width: 25vw;
+}
+
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #a9a9a9;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+  color: black;
+  font-weight: 800;
+  margin: 0;
+}
+
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: white;
+  color: black;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield > label {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+  color: black;
+}
+
+.textyear {
+  text-align: center;
+  position: relative;
+  bottom: -25px;
+  margin-top: -15px;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 16px 0;
+  margin: 20px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: white;
+  background: #00B7CE;
+  cursor: pointer;
+}
+
+.btn-criar {
+  width: 70%;
+  padding: 16px 0;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: white;
+  background: #42b72a;
+  cursor: pointer;
+}
+
+.btn-config {
+  width: 70%;
+  padding: 16px 0;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.divider {
+  width: 80%; 
+  border: 0;
+  height: 1px; 
+  background: #000; 
+  margin: 15px 0; 
+  opacity: 0.5; 
+}
+
+@media only screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+
+  .left-login > h1 {
+    display: none;
+  }
+
+  .left-login {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; 
+  }
+
+  .left-login-image {
+    width: 40vh;
+    margin-bottom: 10px; 
+  }
+
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-login {
+    width: 90%;
+    padding: 15px 20px; 
+    max-height: 85vh; 
+  }
+}
+
+#configuracoes {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+#configuracoes input {
+  margin-bottom: 10px;
+}

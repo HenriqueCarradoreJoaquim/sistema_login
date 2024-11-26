@@ -1,0 +1,39 @@
+INSTRUÇÕES PARA RODAR O PROJETO
+ESTRUTURA DO PROJETO
+A pasta do projeto contém os seguintes arquivos organizados conforme listado:
+
+agrosys/
+imagens/
+cadastro.html            # Página de cadastro de clientes e endereços
+cadastro.js              # Lógica da página de cadastro
+database.js              # Configuração e manipulação do banco de dados com alasql.js
+index.html               # Página inicial (login)
+index.js                 # Lógica da página de login
+login.html               # Página para gerenciar login e registro de usuários
+login.js                 # Lógica da página de login e registro
+stylecadastro.css        # Estilo para a página de cadastro
+styleindex.css           # Estilo para a página inicial
+stylelogin.css           # Estilo para a página de login
+teste3.json               # Arquivo com dados de exemplo para teste
+
+
+COMO EXECUTAR O PROJETO
+Faça o download do projeto
+Baixe e extraia a pasta agrosys no seu computador.
+
+Abra o arquivo principal
+Abra o arquivo login.html no navegador para iniciar o sistema.
+
+Fluxo de navegação
+
+Tela de Login
+Insira um usuário e senha previamente cadastrados ou clique na opção de criar nova conta para criar um novo usuário.
+Utilize a opção de "Configurações" para carregar um banco de dados pré-populado (teste3.json) Exemplo: 
+Usuário: admin
+Senha: 12345
+
+Tela de Cadastro de Clientes e Endereços
+Se preferir preencha os campos obrigatórios para adicionar novos usuários e seus respectivos endereços.
+
+Exportar o banco de dados
+Após o login, você será redirecionado para a tela de index, utilize a funcionalidade de exportação para salvar o banco de dados local em um arquivo no formato JSON.

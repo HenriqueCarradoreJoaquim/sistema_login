@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecadastro.css">
+    <link rel="icon" type="image/png" href="./imagens/minilogo.png">
+    <title>Cadastro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/4.5.2/alasql.min.js" integrity="sha512-XN3zQzaA1t6d8iLmz5tRFzvPfpNog2g2I7ky43iOWFRLH3FznaSWiUol+SYG3OmSc6nXciLo9BLcI0DIQxPi0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="database.js"></script>
+</head>
+<body>
+    <div class="box">
+        <button id="backButton" onclick="window.history.back()">Voltar</button>
+        <form id="cadastroForm">
+            <fieldset>
+                <legend><b>Cadastro</b></legend>
+
+                <!-- Dados do Usuário -->
+                <div class="inputbox">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input type="date" name="dataNascimento" id="dataNascimento" class="inputUser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" class="inputUser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" id="usuario" class="inputUser" required>
+                </div>
+                <div class="inputbox">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                </div>
+
+                <!-- Endereço 1 -->
+                <div class="address-section">
+                    <h3>Endereço 1</h3>
+                    <div class="inputbox">
+                        <label for="cep1">CEP</label>
+                        <input type="text" name="cep1" id="cep1" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="rua1">Rua</label>
+                        <input type="text" name="rua1" id="rua1" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="bairro1">Bairro</label>
+                        <input type="text" name="bairro1" id="bairro1" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="cidade1">Cidade</label>
+                        <input type="text" name="cidade1" id="cidade1" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="estado1">Estado</label>
+                        <input type="text" name="estado1" id="estado1" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="pais1">País</label>
+                        <input type="text" name="pais1" id="pais1" class="inputUser" required>
+                    </div>
+                </div>
+
+                <!-- Endereço 2 -->
+                <div class="address-section">
+                    <h3>Endereço 2</h3>
+                    <div class="inputbox">
+                        <label for="cep2">CEP</label>
+                        <input type="text" name="cep2" id="cep2" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="rua2">Rua</label>
+                        <input type="text" name="rua2" id="rua2" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="bairro2">Bairro</label>
+                        <input type="text" name="bairro2" id="bairro2" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="cidade2">Cidade</label>
+                        <input type="text" name="cidade2" id="cidade2" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="estado2">Estado</label>
+                        <input type="text" name="estado2" id="estado2" class="inputUser" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="pais2">País</label>
+                        <input type="text" name="pais2" id="pais2" class="inputUser" required>
+                    </div>
+                </div>
+
+                <!-- Definir Endereço Principal -->
+                <div>
+                    <label>
+                        <input type="radio" id="principal1" name="principal" value="1" required>
+                        Endereço 1 Principal
+                    </label>
+                    <label>
+                        <input type="radio" id="principal2" name="principal" value="2" required>
+                        Endereço 2 Principal
+                    </label>
+                </div>
+
+                <!-- Botão de Submissão -->
+                <input type="submit" id="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>

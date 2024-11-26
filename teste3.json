@@ -1,0 +1,11 @@
+{
+  "usuarios": [
+    { "id": 1, "nome": "Admin", "usuario": "admin", "senha": "12345" }
+  ],
+  "clientes": [
+    { "id": 1, "nome": "João Silva", "cpf": "123.456.789-00", "data_nascimento": "1980-01-01", "telefone": "1123456789", "celular": "11987654321" }
+  ],
+  "enderecos": [
+    { "id": 1, "cliente_id": 1, "cep": "12345-678", "rua": "Rua Exemplo", "bairro": "Centro", "cidade": "São Paulo", "estado": "SP", "pais": "Brasil", "principal": true }
+  ]
+}

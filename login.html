@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelogin.css">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="./imagens/minilogo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/4.5.2/alasql.min.js" integrity="sha512-XN3zQzaA1t6d8iLmz5tRFzvPfpNog2g2I7ky43iOWFRLH3FznaSWiUol+SYG3OmSc6nXciLo9BLcI0DIQxPi0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="database.js"></script> 
+    
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+         <img src="imagens/logo2.gif" class="left-login-image" alt="Pessoa trabalhando">
+        </div>
+        
+        <form method="post" id="loginForm">
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>LOGIN</h1>
+                    <div class="textfield">
+                        <input type="text" name="usuario" id="usuario" placeholder="Usuário" required>
+                    </div>
+                    <div class="textfield">
+                        <input type="password" name="password" id="senha" placeholder="Senha" required>
+                    </div>
+                    <button type="submit" class="btn-login">Entrar</button>
+                    <hr class="divider">
+        
+                    <button class="btn-criar" onclick="window.location.href='cadastro.html'">Criar nova conta</button>
+                    <button type="button" class="btn-config" onclick="toggleConfiguracoes()">Configurações</button>
+
+                    <div id="configuracoes" style="display: none;">
+                        <h2>Configurações</h2>
+                        <label for="fileUpload">Carregar Banco de Dados:</label>
+                        <input type="file" id="fileUpload" accept=".json" />
+                        <button type="button" onclick="uploadDatabase()">Carregar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
