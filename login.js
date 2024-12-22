@@ -55,24 +55,34 @@ function toggleConfiguracoes() {
     configuracoesDiv.style.display === "none" ? "block" : "none";
 }
 
-document
-  .getElementById("loginForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+document.getElementById("loginForm").addEventListener("submit", async function (event) {
+  event.preventDefault();
 
-    const usuario = document.getElementById("usuario").value;
-    const senha = document.getElementById("senha").value;
+  const usuario = document.getElementById("usuario").value;
+  const senha = document.getElementById("senha").value;
 
-    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+  const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    const user = usuarios.find(
+  const user = usuarios.find(
       (user) => user.usuario === usuario && user.senha === senha
-    );
+  );
 
-    if (user) {
-      alert("Login realizado com sucesso!");
-      window.location.href = "index.html";
-    } else {
-      alert("Usuário ou senha incorretos!");
-    }
-  });
+  if (user) {
+      const mensagem = document.createElement("div");
+      mensagem.textContent = "Login realizado com sucesso!";
+      mensagem.style.color = "green";
+      mensagem.style.marginTop = "10px";
+      document.getElementById("loginForm").appendChild(mensagem);
+
+      setTimeout(() => {
+          window.location.href = "index.html";
+      }, 500); 
+  } else {
+
+    const mensagem = document.createElement("div");
+      mensagem.textContent = "Usuário ou senha incorretos!";
+      mensagem.style.color = "red";
+      mensagem.style.marginTop = "10px";
+      document.getElementById("loginForm").appendChild(mensagem);
+  }
+});
